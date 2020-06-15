@@ -11,7 +11,7 @@ import Cart from './pages/Cart';
 export default function Routes() {
   return (
     <Switch>
-      <Route exact path="/" component={Home} />
+      <Route path="/" exact component={Home} />
       <Route path="/shop" component={Shop} />
       <Route path="/products" component={Products} />
       <Route path="/about" component={About} />
