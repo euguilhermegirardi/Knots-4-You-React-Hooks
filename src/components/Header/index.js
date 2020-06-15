@@ -14,8 +14,8 @@ export default function Header() {
         </NavLink>
         <Links>
           <Routes to="/shop">Shop</Routes>
-          <Routes to="/about">About</Routes>
-          <Routes to="/contact">Contact</Routes>
+          <Routes to="/about" >About</Routes>
+          <Routes to="/contact" >Contact</Routes>
         </Links>
       </LinksContainer>
 
