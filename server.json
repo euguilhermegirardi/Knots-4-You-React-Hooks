@@ -1,0 +1,56 @@
+{
+  "stock": [
+    {
+      "id": 1,
+      "amount": 3
+    },
+    {
+      "id": 2,
+      "amount": 5
+    },
+    {
+      "id": 3,
+      "amount": 2
+    },
+    {
+      "id": 4,
+      "amount": 5
+    },
+    {
+      "id": 5,
+      "amount": 3
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Aztec Macrame Wall Hanging Bohemian Style",
+      "price": "€80.00",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61RJPCwUjDL._AC_SL1000_.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Dremisland Macrame Wall Hanging Boho",
+      "price": "€180.00",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/811t0qc6iaL._AC_SL1500_.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Mrinb Woven Macrame Wall Hanging Tapestry",
+      "price": "€280.00",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61sPbxSQOQL._AC_SL1001_.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Set of 2 Macrame Wall Hangings",
+      "price": "€110.00",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/61GN-AKx61L._AC_SL1001_.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Macrame Wall Hanging Woven tapestry",
+      "price": "€135.00",
+      "image": "https://images-na.ssl-images-amazon.com/images/I/71RTJZXxjjL._AC_SL1200_.jpg"
+    }
+  ]
+}
