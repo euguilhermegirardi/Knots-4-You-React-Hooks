@@ -32,43 +32,43 @@
   "products": [
     {
       "id": 1,
-      "title": "MACRAME WEAVINGS",
+      "title": "Macrame Weavings",
       "price": 1200.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/71yS71n9xQL._AC_SL1001_.jpg"
     },
     {
       "id": 2,
-      "title": "CURVED MACRAME",
+      "title": "Curved Macrame",
       "price": 1600.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/719rdGFSafL._AC_SL1001_.jpg"
     },
     {
       "id": 3,
-      "title": "INDIGO MACRAME",
+      "title": "Indigo Macrame",
       "price": 1280.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/71scPPQi3cL._AC_SL1200_.jpg"
     },
     {
       "id": 4,
-      "title": "TASSELS & TEXTURE",
+      "title": "Tassels & Texture",
       "price": 5500.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/419A2fUlStL._AC_.jpg"
     },
     {
       "id": 5,
-      "title": "5' X 10' BIG ROPE MACRAME",
+      "title": "5' X 10' Big Rope Macrame",
       "price": 7135.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/61GsBaHkKuL._AC_SL1001_.jpg"
     },
     {
       "id": 6,
-      "title": "5' X 10' BIG ROPE MACRAME",
+      "title": "3' X 7' Big Rope Macrame",
       "price": 7135.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/81aPW9A06-L._AC_SL1500_.jpg"
     },
     {
       "id": 7,
-      "title": "5' X 10' BIG ROPE MACRAME",
+      "title": "4' X 8' Big Rope Macrame",
       "price": 7135.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/71v3xDrTDKL._AC_SL1500_.jpg"
     }
