@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
 import Shop from './pages/Shop';
-import Products from './pages/Products';
+import Product from './pages/Product';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Cart from './pages/Cart';
@@ -11,12 +11,12 @@ import Cart from './pages/Cart';
 export default function Routes() {
   return (
     <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/shop" component={Shop} />
-      <Route path="/products" component={Products} />
-      <Route path="/about" component={About} />
-      <Route path="/contact" component={Contact} />
-      <Route path="/cart" component={Cart} />
+      <Route exact path="/" component={Home} />
+      <Route exact path="/shop" component={Shop} />
+      <Route exact path="/products/:id" component={Product} />
+      <Route exact path="/about" component={About} />
+      <Route exact path="/contact" component={Contact} />
+      <Route exact path="/cart" component={Cart} />
     </Switch>
   )
 };

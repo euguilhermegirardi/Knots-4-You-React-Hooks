@@ -25,7 +25,6 @@ import hanger from '../../assets/macrame-hanger.jpeg';
 import cords from '../../assets/macrame-cords.jpeg';
 import Footer from '../../components/Footer';
 
-
 export default function Home() {
   return (
     <>
