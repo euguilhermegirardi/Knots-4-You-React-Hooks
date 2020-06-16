@@ -10,6 +10,16 @@ export const Container = styled.header`
 
 export const LinksContainer = styled.div`
   display: flex;
+
+  img {
+    @media (max-width: 530px) {
+      width: 160px;
+    }
+
+    &:hover {
+    opacity: 0.7;
+  }
+  }
 `;
 
 export const Links = styled.div`
@@ -17,13 +27,18 @@ export const Links = styled.div`
   align-items: center;
   text-transform: uppercase;
   text-decoration: none;
+  margin-left: -1.3rem;
 `;
 
 export const Routes = styled(LinkWrapper)`
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  margin: 0 1rem;
+  margin: 0 8px;
+
+  &:hover {
+    opacity: 0.7;
+  }
 `;
 
 export const Cart = styled(LinkWrapper)`
@@ -32,6 +47,10 @@ export const Cart = styled(LinkWrapper)`
   text-decoration: none;
   transition: opacity 0.2s;
   color: #474547;
+
+  @media (max-width: 530px) {
+    flex-direction: column;
+  }
 
   &:hover {
     opacity: 0.7;
