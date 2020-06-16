@@ -5,7 +5,9 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 50px 0;
+
+  max-width: 1020px;
+  margin: 0 auto;
 `;
 
 export const LinksContainer = styled.div`
@@ -28,13 +30,16 @@ export const Links = styled.div`
   text-transform: uppercase;
   text-decoration: none;
   margin-left: -1.3rem;
+  font-size: 1.1rem;
+    letter-spacing: 1.5px;
 `;
 
 export const Routes = styled(LinkWrapper)`
   text-transform: uppercase;
   text-decoration: none;
   color: inherit;
-  margin: 0 8px;
+  margin: 0 9px;
+  transition: ease .5s;
 
   &:hover {
     opacity: 0.7;
@@ -63,9 +68,10 @@ export const Cart = styled(LinkWrapper)`
 
   strong {
     display: block;
+    font-size: 1.2rem;
   }
 
   span {
-    font-size: 12px;
+    font-size: 1rem;
   }
 `;

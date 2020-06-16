@@ -2,6 +2,8 @@ import { createGlobalStyle } from 'styled-components';
 import 'react-toastify/dist/ReactToastify.css';
 
 export default createGlobalStyle`
+
+
   * {
     margin: 0;
     padding: 0;
@@ -12,17 +14,12 @@ export default createGlobalStyle`
   body {
     font-family: 'Roboto', sans-serif;
     -webkit-font-smoothing: antialiased;
+    background: #f0f0f5;
     color: #474547;
   }
 
   body, input, button {
     font-size: 14px;
-  }
-
-  #root {
-    max-width: 1020px;
-    margin: 0 auto;
-    padding: 0 20px 50px;
   }
 
   button {
