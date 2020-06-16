@@ -23,6 +23,7 @@ import beginner from '../../assets/macrame-beginner.jpeg';
 import wall from '../../assets/macrame-wall.jpeg';
 import hanger from '../../assets/macrame-hanger.jpeg';
 import cords from '../../assets/macrame-cords.jpeg';
+import Footer from '../../components/Footer';
 
 
 export default function Home() {
@@ -117,6 +118,8 @@ export default function Home() {
           </SmallTips>
 
         </GetStarted>
+
+        <Footer />
       </Container>
     </>
   )
