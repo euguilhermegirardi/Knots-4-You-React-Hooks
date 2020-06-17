@@ -23,10 +23,11 @@ export default function Shop() {
   }, []);
 
   return (
+    <>
     <Container>
       <Products>
         {products.map(product => (
-          <NavLink key={product.id} to={`/products/${product.id} + ${product.title}`} style={{ textDecoration: 'none', color: 'inherit' }}>
+          <NavLink key={product.id} to={`product/${product.id}`} style={{ textDecoration: 'none', color: 'inherit' }}>
             <Item>
               <img src={product.image} alt={product.title} />
               <p>{product.title}</p>
@@ -37,5 +38,6 @@ export default function Shop() {
       </Products>
       <Footer />
     </Container>
+    </>
   )
 };

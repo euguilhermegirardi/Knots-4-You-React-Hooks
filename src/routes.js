@@ -12,11 +12,11 @@ export default function Routes() {
   return (
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/shop" component={Shop} />
-      <Route exact path="/products/:id" component={Product} />
-      <Route exact path="/about" component={About} />
-      <Route exact path="/contact" component={Contact} />
-      <Route exact path="/cart" component={Cart} />
+      <Route path="/shop" component={Shop} />
+      <Route path="/product/:id" component={Product} />
+      <Route path="/about" component={About} />
+      <Route path="/contact" component={Contact} />
+      <Route path="/cart" component={Cart} />
     </Switch>
   )
 };
