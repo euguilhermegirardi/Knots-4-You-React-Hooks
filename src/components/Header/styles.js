@@ -64,14 +64,26 @@ export const Cart = styled(LinkWrapper)`
   div {
     text-align: right;
     margin-right: 10px;
-  }
 
-  strong {
+    strong {
     display: block;
     font-size: 1.2rem;
+    }
+
+    span {
+      font-size: 1rem;
+    }
   }
 
-  span {
-    font-size: 1rem;
+  .cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-left: 5px;
+    }
   }
+
+
 `;

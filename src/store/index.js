@@ -1,12 +1,20 @@
 import { createStore, applyMiddleware } from 'redux';
+import createSagaMiddleware from 'redux-saga';
 import logger from 'redux-logger';
 
-import rootReducer from './modules/rootReducer';
+import rootSaga from './modules/cart/sagas';
+import rootReducer from './modules/combineReducer';
+
+// // create the saga middleware
+const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
   rootReducer,
-  applyMiddleware(logger)
+  applyMiddleware(sagaMiddleware, logger)
 );
+
+// // then run the saga
+sagaMiddleware.run(rootSaga);
 
 store.subscribe(() => {
   console.log('state has changed', store.getState());

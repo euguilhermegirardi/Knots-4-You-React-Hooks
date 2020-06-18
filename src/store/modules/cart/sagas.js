@@ -4,12 +4,12 @@ import { toast } from 'react-toastify';
 import api from '../../../services/api';
 import history from '../../../services/history';
 import { addToCartSuccess, updateAmountSuccess } from './actions';
-import { formatPrice } from '../../../util/format';
+import { formatPrice } from '../../../utils/format';
 
 function* addToCart({ id }) {
 
   const productExists = yield select(
-    state => state.cart.find(product => product.id === id)
+    state => state.cart.find(p => p.id === id),
   );
 
   const stock = yield call(api.get, `/stock/${id}`);
@@ -39,8 +39,7 @@ function* addToCart({ id }) {
     }
 
     yield put(addToCartSuccess(data));
-
-    history.push('/cart'); // leave it or take it out?
+    history.push('/cart');
   }
 
 };
@@ -58,9 +57,11 @@ function* updateAmount({ id, amount }) {
   }
 
   yield put(updateAmountSuccess(id, amount));
-};
+}
 
-export default all([
-  takeLatest('@cart/ADD_REQUEST', addToCart),
-  takeLatest('@cart/UPDATE_AMOUNT_REQUEST', updateAmount)
-]);
+export default function* watchAll() {
+  yield all([
+    takeLatest('ADD_REQUEST', addToCart),
+    takeLatest('UPDATE_AMOUNT_REQUEST', updateAmount)
+  ]);
+}
