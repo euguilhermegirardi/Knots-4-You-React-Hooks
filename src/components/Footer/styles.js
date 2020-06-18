@@ -22,6 +22,7 @@ export const FooterLinks = styled.div`
   & > div {
     display: flex;
     flex-direction: column;
+    min-width: 180px;
   }
 
   h4 {

@@ -3,43 +3,52 @@ import styled from 'styled-components';
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
-  max-height: 550px;
+  max-width: 1020px;
   margin: 0 auto;
 `;
 
 export const ProfileContainer = styled.section`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const ImgContainer = styled.div`
-  max-width: 500px;
+  flex: 1;
+  height: 350px;
+  width: 350px;
 
   img {
-      width: 100%;
-      height: 100%;
-    }
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    vertical-align: bottom;
+  }
 `;
 
 export const TxtContainer = styled.div`
-  background-color: #fce4ec;
-  max-width: 900px;
+  min-width: 425px;
   display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 5px 7rem;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #fce4ec;
+  padding: 0 1rem;
 
-    h2 {
-      font-size: 1.8rem;
-    }
+  @media (max-width: 789px) {
+    padding: 1.5rem;
+  }
 
-    p {
-      font-size: 1.3rem;
-      margin: 1rem 0 2.2rem 0;
-      letter-spacing: .8px;
-      line-height: 2.3rem;
-    }
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 1rem 0;
+    letter-spacing: .8px;
+    line-height: 2.3rem;
+  }
 `;
 
 export const BtnContainer = styled.div`
