@@ -1,34 +1,13 @@
-import React, { useState, useEffect } from 'react';
-import { useSelector } from 'react-redux';
+import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import { MdShoppingBasket } from 'react-icons/md';
 
-import api from '../../services/api';
 import logo from '../../assets/logo.png';
 import { Container, Cart, Links, LinksContainer, Routes } from './styles';
 
 export default function Header() {
-  const [products, setProducts] = useState([]);
-
-  const amount = useSelector(state => state.cart.reduce((sumAmount, product) => {
-    (sumAmount[product.id] = product.amount);
-
-    return sumAmount;
-  }, []));
-
-  useEffect(() => {
-    async function loadProducts() {
-      const response = await api.get('products');
-
-      const data = response.data.map(product => ({
-        ...product
-      }));
-
-      setProducts(data);
-    }
-
-    loadProducts();
-  },[]);
+  const cartQty = useSelector(state => state.cart.length);
 
   return (
     <Container>
@@ -48,12 +27,10 @@ export default function Header() {
           <strong>My cart</strong>
           <span>items</span>
         </div>
-
         <div className="cart">
           <MdShoppingBasket size={36} color="#474547" />
-          <p>{amount[products.id] || 0 }</p>
+          <p>{cartQty}</p>
         </div>
-
       </Cart>
     </Container>
   )
