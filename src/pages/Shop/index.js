@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 
+import api from '../../services/api';
+import { formatPrice } from '../../utils/format';
 import { Container, Products, Item } from './styles';
 import Footer from '../../components/Footer';
-import api from '../../services/api';
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
@@ -13,7 +14,8 @@ export default function Shop() {
       const response = await api.get('products');
 
       const data = response.data.map(product => ({
-        ...product
+        ...product,
+        priceFormatted: formatPrice(product.price),
       }));
 
       setProducts(data);
@@ -31,7 +33,7 @@ export default function Shop() {
             <Item>
               <img src={product.image} alt={product.title} />
               <p>{product.title}</p>
-              <small>{product.price}</small>
+              <small>{product.priceFormatted}</small>
             </Item>
           </NavLink>
         ))}
