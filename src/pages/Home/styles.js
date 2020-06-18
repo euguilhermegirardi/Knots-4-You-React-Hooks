@@ -81,7 +81,7 @@ export const LearnMacrame = styled.section`
   align-items: center;
   justify-content: center;
   min-height: 420px;
-  margin: 6rem;
+  margin: 1rem;
 `;
 
 export const LearnTxtContainer = styled.div`
@@ -107,15 +107,17 @@ export const LearnTxtContainer = styled.div`
 
 export const IconsContainer = styled.div`
   display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
 
   div {
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    &:nth-child(2) {
-      margin: 0 10rem;
-    }
+    min-width: 200px;
+    margin: 1rem;
 
     button {
     font-size: 1rem;
