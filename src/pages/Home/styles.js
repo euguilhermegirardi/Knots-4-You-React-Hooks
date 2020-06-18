@@ -112,6 +112,10 @@ export const IconsContainer = styled.div`
   justify-content: space-between;
   flex-wrap: wrap;
 
+  @media (max-width: 510px) {
+    flex-direction: column;
+  }
+
   div {
     display: flex;
     flex-direction: column;
