@@ -1,9 +1,13 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  padding: 30px;
-  background: #fff;
+  display: flex;
+  flex-direction: column;
+  max-width: 1020px;
+  margin: 0 auto;
+  background-color: #fce4ec;
   border-radius: 4px;
+  padding: 5rem;
 
   footer {
     margin-top: 30px;
@@ -12,14 +16,20 @@ export const Container = styled.div`
     align-items: center;
 
     button {
-      cursor: no-drop;
-      background: #7159c1;
-      color: #fff;
+      font-size: 1rem;
+      background: #c9b2ba;
+      letter-spacing: 0.02em;
+      text-align: center;
       border: 0;
-      border-radius: 4px;
-      padding: 12px 20px;
-      font-weight: bold;
-      text-transform: uppercase;
+      color: #fff;
+      padding: 1rem;
+      transition: ease .5s;
+      cursor: no-drop;
+
+    &:hover {
+      background: #f8bbd0;
+      color: inherit;
+    }
     }
   }
 `;
@@ -28,7 +38,7 @@ export const ProductTable = styled.table`
   width: 100%;
 
   thead th {
-    color: #999;
+    color: #474547;
     text-align: left;
     padding: 12px;
   }
@@ -43,7 +53,7 @@ export const ProductTable = styled.table`
   }
 
   strong {
-    color: #333;
+    color: #474547;
     display: block;
   }
 
@@ -61,7 +71,7 @@ export const ProductTable = styled.table`
     input {
       border: 1px solid #ddd;
       border-radius: 4px;
-      color: #666;
+      color: #474547;
       padding: 6px;
       width: 50px;
     }
@@ -79,7 +89,7 @@ export const Total = styled.div`
   align-items: baseline;
 
   span {
-    color: #999;
+    color: #474547;
     font-weight: bold;
   }
 

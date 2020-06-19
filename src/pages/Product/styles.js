@@ -2,9 +2,16 @@ import styled from 'styled-components';
 
 export const Container = styled.section`
   display: flex;
+  flex-direction: column;
   max-width: 1020px;
   margin: 0 auto;
   padding: 1rem;
+`;
+
+export const ColumnContainer = styled.div`
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
 `;
 
 export const ProductInfo = styled.div`
@@ -52,15 +59,19 @@ export const ProductInfo = styled.div`
 `;
 
 export const Image = styled.img`
- display: flex;
- flex: 2;
- width: 250px;
- border-radius: 2px;
+  display: flex;
+  flex: 2;
+  margin: 0 1rem;
+  width: 480px;
+  height: 600px;
+  border: 2px solid #474547;
+  border-radius: 2px;
 `;
 
 export const AddToCart = styled.div`
   display: flex;
   flex-direction: column;
+  align-items: center;
   flex: 1;
 
   h2 {
@@ -77,6 +88,9 @@ export const AddToCart = styled.div`
   }
 
   .btn {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 13rem;
     font-size: 1rem;
     background: #f8bbd0;
