@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   max-width: 1020px;
   margin: 0 auto;
+  padding: 1rem;
 `;
 
 export const ProfileContainer = styled.section`
