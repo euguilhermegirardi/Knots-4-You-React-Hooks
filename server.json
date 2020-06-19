@@ -72,5 +72,19 @@
       "price": 7135.0,
       "image": "https://images-na.ssl-images-amazon.com/images/I/71v3xDrTDKL._AC_SL1500_.jpg"
     }
+  ],
+  "homepage": [
+    {
+      "id": 1,
+      "name": "Raisa",
+      "profile": "Through a range of online tutorials and learning resources I teach crafty folk how to make quality macrame as well as advise inspired creatives on how to transform their handmade hobby, into a profitable side hustle or business.",
+      "question": "Do you want to learn how to master macramé patterns?",
+      "question2": "Or are you simply looking for a place to source the best quality cotton cord?",
+      "paragraph": "Either way, United Knots is here to teach you how to macramé your way to making and designing your own beautiful pieces.",
+      "getstarted": "Let’s get started...",
+      "smalltips": "Small tips for you!",
+      "tiptopic": "Beginners Macrame Knots - 6. Double Half Hitch Knots",
+      "tiptext": "If you've chosen to take the first steps to learning a new craft, fantastic! Welcome aboard, here is what you need to know in Basic steps Knot 6- How To Tie Double Half Hitch Knots"
+    }
   ]
 }
