@@ -6,7 +6,8 @@ export const Container = styled.footer`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 3rem 0;
+  max-width: 1020px;
+  margin: 0 auto;
 `;
 
 export const SocialMedia = styled.div`

@@ -7,20 +7,20 @@ import {
 } from 'react-icons/md';
 
 import { Container, ProductTable, Total } from './styles';
-import { formatPrice } from '../../utils/format';
 import * as CartActions from '../../store/modules/cart/actions';
+import Footer from '../../components/Footer';
 
 export default function Cart() {
 
-  const total = useSelector(state => formatPrice(
+  const total = useSelector(state =>
     state.cart.reduce((total, product) => {
       return total + product.price * product.amount;
     }, 0),
-  ));
+  );
 
   const cart = useSelector(state => state.cart.map(product => ({
     ...product,
-    subtotal: formatPrice(product.price * product.amount)
+    subtotal: (product.price * product.amount)
   })));
 
   const dispatch = useDispatch();
@@ -34,12 +34,14 @@ export default function Cart() {
   }
 
   return (
+    <>
     <Container>
       <ProductTable>
         <thead>
           <tr>
             <th>PRODUCT</th>
             <th>QTD</th>
+            <th></th>
             <th>SUBTOTAL</th>
           </tr>
         </thead>
@@ -54,7 +56,7 @@ export default function Cart() {
               </td>
               <td>
                 <strong>{product.title}</strong>
-                <span>{product.priceFormatted}</span>
+                <span>€ {product.price}</span>
               </td>
               <td>
                 <div>
@@ -67,9 +69,8 @@ export default function Cart() {
                   </button>
                 </div>
               </td>
-              <td />
               <td>
-                <strong>{product.subtotal}</strong>
+                <strong>€ {product.subtotal}</strong>
               </td>
               <td>
                 <button type="button" onClick={() => dispatch(CartActions.removeFromCart(product.id))} >
@@ -86,9 +87,11 @@ export default function Cart() {
 
         <Total>
           <span>TOTAL</span>
-          <strong>{total}</strong>
+          <strong>€ {total}</strong>
         </Total>
       </footer>
     </Container>
+    <Footer />
+    </>
   )
 };

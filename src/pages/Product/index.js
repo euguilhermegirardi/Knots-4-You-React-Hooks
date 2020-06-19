@@ -5,7 +5,6 @@ import { useHistory } from 'react-router-dom';
 import { MdShoppingCart } from 'react-icons/md';
 
 import api from '../../services/api';
-import { formatPrice } from '../../utils/format';
 import * as CartActions from '../../store/modules/cart/actions';
 import {
   Container,
@@ -94,8 +93,8 @@ export default function Product() {
           </button>
         </AddToCart>
       </ColumnContainer>
-      <Footer />
     </Container>
+    <Footer />
     </>
   )
 };

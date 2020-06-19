@@ -8,6 +8,7 @@ export const Container = styled.div`
   background-color: #fce4ec;
   border-radius: 4px;
   padding: 5rem;
+  margin-bottom: 12rem;
 
   footer {
     margin-top: 30px;

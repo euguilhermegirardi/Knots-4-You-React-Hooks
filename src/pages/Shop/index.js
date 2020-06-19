@@ -38,8 +38,8 @@ export default function Shop() {
           </NavLink>
         ))}
       </Products>
-      <Footer />
     </Container>
+    <Footer />
     </>
   )
 };

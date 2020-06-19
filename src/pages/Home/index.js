@@ -118,8 +118,8 @@ export default function Home() {
 
         </GetStarted>
 
-        <Footer />
       </Container>
+      <Footer />
     </>
   )
 };
