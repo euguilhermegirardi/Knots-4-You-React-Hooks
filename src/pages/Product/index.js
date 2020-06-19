@@ -58,23 +58,23 @@ export default function Product() {
         <ProductInfo>
           <div>
             <h2>About the {product.title}</h2>
-            <p>Soft & smooth twisted string, works wonderfully for a variety of projects. Could also be used for knitting, crochet, weaving, gift wrap, jewelry making, household ties & more!</p>
+            <p>{product.description}</p>
           </div>
 
           <div>
-            <strong>Fiber Content: </strong><p>100% Oeko Tex Cotton</p>
-            <strong>Approx. Length: </strong><p>1200’ (365.76 m)</p>
-            <strong>Diameter: </strong><p>4 mm (¼”)</p>
-            <strong>Ply: </strong><p>1 ply</p>
-            <strong>Dimensions: </strong><p>9.25” x 7” (23.5 x 17.78 cm)</p>
-            <strong>Weight: </strong><p>4.6 lbs (2 kg)</p>
-            <strong>Origin: </strong><p>Turkey</p>
+            <strong>Fiber Content: </strong><p>{product.content}</p>
+            <strong>Approx. Length: </strong><p>{product.length}</p>
+            <strong>Diameter: </strong><p>{product.diameter}</p>
+            <strong>Ply: </strong><p>{product.ply}</p>
+            <strong>Dimensions: </strong><p>{product.dimension}</p>
+            <strong>Weight: </strong><p>{product.weight}</p>
+            <strong>Origin: </strong><p>{product.origin}</p>
           </div>
 
           <div>
             <strong>Recommended Skill Level</strong>
-            <p>Beginner</p>
-            <p>Easy to work with and ever so soft!</p>
+            <p>{product.level}</p>
+            <p>{product.commentlevel}</p>
           </div>
         </ProductInfo>
 
