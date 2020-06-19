@@ -12,6 +12,7 @@ export const Container = styled.div`
     align-items: center;
 
     button {
+      cursor: no-drop;
       background: #7159c1;
       color: #fff;
       border: 0;
@@ -19,7 +20,6 @@ export const Container = styled.div`
       padding: 12px 20px;
       font-weight: bold;
       text-transform: uppercase;
-      transition: background 0.2s;
     }
   }
 `;

@@ -3,9 +3,9 @@ import styled from 'styled-components';
 export const Container = styled.section`
   display: flex;
   flex-direction: column;
-  max-width: 1400px;
-  max-width: 1400px;
+  max-width: 1020px;
   margin: 0 auto;
+  padding: 1rem;
 `;
 
 export const Products = styled.div`
@@ -24,8 +24,9 @@ export const Item = styled.li`
   transition: ease 0.5s;
 
   img {
-    width: 450px;
-    height: 480px;
+    width: 350px;
+    height: 350px;
+    border: 2px solid #ccc;
   }
 
   p {

@@ -18,10 +18,10 @@ export default function Footer() {
 
         <SocialMedia>
           <IconContext.Provider value={{ color: "#474547", size: "3rem"  }}>
-            <AiFillFacebook style={{ cursor: 'pointer' }}/>
-            <AiFillInstagram style={{ marginLeft: "4rem", cursor: 'pointer'}} />
-            <AiFillYoutube style={{ margin: "0 4rem", cursor: 'pointer'}}  />
-            <FaPinterestSquare style={{ cursor: 'pointer' }}/>
+            <AiFillFacebook className="icons" />
+            <AiFillInstagram className="icons" />
+            <AiFillYoutube className="icons" />
+            <FaPinterestSquare className="icons" />
           </IconContext.Provider>
         </SocialMedia>
 

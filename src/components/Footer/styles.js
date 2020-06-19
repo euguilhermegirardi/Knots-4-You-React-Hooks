@@ -10,7 +10,19 @@ export const Container = styled.footer`
 `;
 
 export const SocialMedia = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
   padding: 2rem;
+
+  .icons {
+    cursor: pointer;
+    transition: ease .5s;
+  }
+
+  .icons:hover {
+    opacity: .4;
+  }
 `;
 
 export const FooterLinks = styled.div`

@@ -5,7 +5,6 @@ export const Container = styled.header`
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   max-width: 1020px;
   margin: 0 auto;
 `;
@@ -14,6 +13,8 @@ export const LinksContainer = styled.div`
   display: flex;
 
   img {
+    transition: ease .5s;
+
     @media (max-width: 530px) {
       width: 160px;
     }

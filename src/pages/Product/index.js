@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { useHistory } from 'react-router-dom';
+import { MdShoppingCart } from 'react-icons/md';
 
 import api from '../../services/api';
 import * as CartActions from '../../store/modules/cart/actions';
@@ -15,6 +16,12 @@ import Footer from '../../components/Footer';
 
 export default function Product() {
   const [product, setProduct] = useState([]);
+
+  const amount = useSelector(state => state.cart.reduce((sumAmount, product) => {
+    (sumAmount[product.id] = product.amount);
+
+    return sumAmount;
+  }, {}));
 
   const { id } = useParams();
 
@@ -74,7 +81,13 @@ export default function Product() {
         <h2>{product.title}</h2>
         <p>{product.price}</p>
 
-        <button className="btn" type="button" onClick={() => handleAddProducts(id)}>Add to Cart</button>
+        <button className="btn" type="button" onClick={() => handleAddProducts(product.id)}>
+            <div>
+              <MdShoppingCart size={16} color="#FFF" />
+              {amount[product.id] || 0}
+            </div>
+          Add to Cart
+        </button>
       </AddToCart>
 
     </Container>

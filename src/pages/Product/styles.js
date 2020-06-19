@@ -4,6 +4,7 @@ export const Container = styled.section`
   display: flex;
   max-width: 1020px;
   margin: 0 auto;
+  padding: 1rem;
 `;
 
 export const ProductInfo = styled.div`

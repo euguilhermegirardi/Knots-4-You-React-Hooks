@@ -8,6 +8,7 @@ import { Container, Cart, Links, LinksContainer, Routes } from './styles';
 
 export default function Header() {
   const cartQty = useSelector(state => state.cart.length);
+  console.log(cartQty);
 
   return (
     <Container>
