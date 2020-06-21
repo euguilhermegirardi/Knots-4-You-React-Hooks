@@ -12,6 +12,10 @@ export const Products = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr) );
   grid-gap: 3rem;
+
+  @media (max-width: 414px) {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
+  }
 `;
 
 export const Item = styled.li`
@@ -27,6 +31,11 @@ export const Item = styled.li`
     width: 350px;
     height: 350px;
     border: 2px solid #ccc;
+
+    @media (max-width: 414px) {
+      width: 300px;
+      height: 300px;
+    }
   }
 
   p {

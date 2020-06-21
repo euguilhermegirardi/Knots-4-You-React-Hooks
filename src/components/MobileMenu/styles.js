@@ -14,13 +14,9 @@ export const Menu = styled.div`
   }
 
    li {
-    list-style: outside none none;
+    list-style: none;
     margin: 10px 0px;
     padding: 0;
     cursor: pointer;
-  }
-
-  li:hover {
-    color: #ff0000;
   }
 `;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { MdShoppingBasket } from 'react-icons/md';
@@ -19,17 +19,23 @@ export default function Header() {
     border: "none"
   };
 
+  const PopUpContainer = forwardRef((props, ref) => {
+    return (
+    <Popup
+      modal
+      overlayStyle={{ background: "#fce4ec" }}
+      contentStyle={contentStyle}
+      closeOnDocumentClick={false}
+      trigger={open => <BurgerIcon open={open} />}
+    >
+      {close => <MobileMenu close={close} />}
+    </Popup>
+    )
+  });
+
   return (
     <Container>
-      <Popup
-        modal
-        overlayStyle={{ background: "rgba(255,255,255,0.98" }}
-        contentStyle={contentStyle}
-        closeOnDocumentClick={false}
-        trigger={open => <BurgerIcon open={open} />}
-      >
-        {close => <MobileMenu close={close} />}
-      </Popup>
+      <PopUpContainer />
 
       <LinksContainer>
         <NavLink to="/">

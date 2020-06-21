@@ -32,7 +32,7 @@ export default function About() {
         <MacrameHistory>
 
           {text.map(txt => (
-            <li key={txt.key}>
+            <li key={txt.id}>
               <h2>{txt.header}</h2>
               <p>{txt.firsttext}</p>
               <p>{txt.secondtext}</p>
