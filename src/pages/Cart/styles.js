@@ -10,6 +10,10 @@ export const Container = styled.div`
   padding: 5rem;
   margin-bottom: 12rem;
 
+  @media (max-width: 414px) {
+    padding: 1rem;
+  }
+
   footer {
     margin-top: 30px;
     display: flex;
@@ -42,12 +46,46 @@ export const ProductTable = styled.table`
     color: #474547;
     text-align: left;
     padding: 12px;
+
+    @media (max-width: 414px) {
+      display: none;
+    }
   }
 
   tbody td {
     padding: 12px;
     border-bottom: 1px solid #eee;
   }
+
+  .name-price {
+      @media (max-width: 414px) {
+        position: absolute;
+        right: 3rem;
+        top: 13rem;
+      }
+    }
+
+    .add-remove {
+      @media (max-width: 414px) {
+        position: absolute;
+        top: 18rem;
+        right: 5rem;
+      }
+    }
+
+    .subtotal {
+      @media (max-width: 414px) {
+        display: none;
+      }
+    }
+
+    .remove-from-cart {
+      @media (max-width: 414px) {
+        position: absolute;
+        right: 2rem;
+        top: 18rem;
+      }
+    }
 
   img {
     height: 100px;

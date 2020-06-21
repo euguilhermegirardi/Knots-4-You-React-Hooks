@@ -50,17 +50,17 @@ export default function Cart() {
           <tbody>
             {cart.map(product => (
               <tr key={product.id}>
-                <td>
+                <td className="image">
                   <img
                     src={product.image}
                     alt={product.title}
                   />
                 </td>
-                <td>
+                <td className="name-price">
                   <strong>{product.title}</strong>
                   <span>€ {product.price}</span>
                 </td>
-                <td>
+                <td className="add-remove">
                   <div>
                     <button type="button" onClick={() => decrement(product)} >
                       <MdRemoveCircleOutline size={20} color="#474547" />
@@ -71,10 +71,10 @@ export default function Cart() {
                     </button>
                   </div>
                 </td>
-                <td>
+                <td className="subtotal">
                   <strong>€ {product.subtotal}</strong>
                 </td>
-                <td>
+                <td className="remove-from-cart">
                   <button type="button" onClick={() => dispatch(CartActions.removeFromCart(product.id))} >
                     <MdDelete size={20} color="#474547" />
                   </button>
