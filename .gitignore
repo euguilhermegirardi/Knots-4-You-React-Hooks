@@ -23,6 +23,4 @@ yarn-debug.log*
 yarn-error.log*
 package-lock.json
 yarn.lock
-
-# Ignore .editorconfig folder
-.editorconfig
+editorconfig

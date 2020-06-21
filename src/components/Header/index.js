@@ -2,16 +2,35 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import { MdShoppingBasket } from 'react-icons/md';
+import Popup from "reactjs-popup";
 
 import logo from '../../assets/logo.png';
 import { Container, Cart, Links, LinksContainer, Routes } from './styles';
+import BurgerIcon from '../../components/BurgerIcon';
+import MobileMenu from '../../components/MobileMenu';
 
 export default function Header() {
   const cartQty = useSelector(state => state.cart.length);
   // console.log(cartQty);
 
+  const contentStyle = {
+    background: "rgba(255,255,255,0)",
+    width: "80%",
+    border: "none"
+  };
+
   return (
     <Container>
+      <Popup
+        modal
+        overlayStyle={{ background: "rgba(255,255,255,0.98" }}
+        contentStyle={contentStyle}
+        closeOnDocumentClick={false}
+        trigger={open => <BurgerIcon open={open} />}
+      >
+        {close => <MobileMenu close={close} />}
+      </Popup>
+
       <LinksContainer>
         <NavLink to="/">
           <img src={logo} alt="knots-4-you" />

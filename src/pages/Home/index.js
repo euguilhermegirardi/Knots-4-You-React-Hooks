@@ -48,6 +48,7 @@ export default function Home() {
   return (
     <>
       <Container>
+
         {text.map(txt => (
           <li key={txt.id}>
             <ProfileContainer>

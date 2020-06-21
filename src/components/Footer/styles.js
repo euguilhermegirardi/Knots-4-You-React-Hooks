@@ -36,6 +36,10 @@ export const FooterLinks = styled.div`
     display: flex;
     flex-direction: column;
     min-width: 180px;
+
+    @media (max-width: 414px) {
+      min-width: 0;
+    }
   }
 
   h4 {

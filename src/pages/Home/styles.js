@@ -18,6 +18,11 @@ export const ImgContainer = styled.div`
   height: 350px;
   width: 350px;
 
+  @media (max-width: 414px) {
+    height: 340px;
+    width: 340px;
+  }
+
   img {
     max-height: 100%;
     min-width: 100%;
@@ -36,6 +41,10 @@ export const TxtContainer = styled.div`
   background-color: #fce4ec;
   padding: 0 1rem;
 
+  @media (max-width: 414px) {
+    min-width: 100%;
+  }
+
   @media (max-width: 789px) {
     padding: 1.5rem;
   }
@@ -49,6 +58,10 @@ export const TxtContainer = styled.div`
     margin: 1rem 0;
     letter-spacing: .8px;
     line-height: 2.3rem;
+
+    @media (max-width: 414px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -65,8 +78,16 @@ export const BtnContainer = styled.div`
     padding: 1rem;
     transition: ease .5s;
 
+    @media (max-width: 414px) {
+      min-width: 48%;
+    }
+
     &:nth-child(2) {
       margin-left: 2rem;
+
+      @media (max-width: 414px) {
+        margin-left: 1rem;
+      }
     }
 
     &:hover {
@@ -175,6 +196,9 @@ export const GetStarted = styled.section`
   justify-items: center;
   background-color: #fce4ec;
   padding: 1rem 3rem 3rem 3rem;
+
+  @media (max-width: 414px) {}
+    padding: 0;
 `;
 
 export const SmallTips = styled.div`

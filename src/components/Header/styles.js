@@ -12,6 +12,10 @@ export const Container = styled.header`
 export const LinksContainer = styled.div`
   display: flex;
 
+  @media (max-width: 414px) {
+    margin-left: 5.5rem;
+  }
+
   img {
     transition: ease .5s;
 
@@ -32,7 +36,11 @@ export const Links = styled.div`
   text-decoration: none;
   margin-left: -1.3rem;
   font-size: 1.1rem;
-    letter-spacing: 1.5px;
+  letter-spacing: 1.5px;
+
+  @media (max-width: 414px) {
+      display: none;
+    }
 `;
 
 export const Routes = styled(LinkWrapper)`
@@ -54,6 +62,10 @@ export const Cart = styled(LinkWrapper)`
   transition: opacity 0.2s;
   color: #474547;
 
+  @media (max-width: 414px) {
+    margin-right: 1rem;
+  }
+
   @media (max-width: 530px) {
     flex-direction: column;
   }
@@ -65,6 +77,10 @@ export const Cart = styled(LinkWrapper)`
   div {
     text-align: right;
     margin-right: 10px;
+
+    @media (max-width: 414px) {
+      display: none;
+    }
 
     strong {
     display: block;
