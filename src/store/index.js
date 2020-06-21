@@ -5,7 +5,7 @@ import logger from 'redux-logger';
 import rootSaga from './modules/cart/sagas';
 import rootReducer from './modules/combineReducer';
 
-// // create the saga middleware
+// create the saga middleware
 const sagaMiddleware = createSagaMiddleware();
 
 const store = createStore(
@@ -13,7 +13,7 @@ const store = createStore(
   applyMiddleware(sagaMiddleware, logger)
 );
 
-// // then run the saga
+// then run the saga
 sagaMiddleware.run(rootSaga);
 
 export default store;
