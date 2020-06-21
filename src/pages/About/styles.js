@@ -38,7 +38,7 @@ export const MacrameHistory = styled.div`
       margin: 2rem;
       border-radius: 2px;
 
-      @media (max-width: 4140px) {
+      @media (max-width: 414px) {
         margin: 2rem 0;
         width: 100%;
       }

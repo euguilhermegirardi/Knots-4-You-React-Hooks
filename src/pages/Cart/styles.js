@@ -31,10 +31,10 @@ export const Container = styled.div`
       transition: ease .5s;
       cursor: no-drop;
 
-    &:hover {
-      background: #f8bbd0;
-      color: inherit;
-    }
+      &:hover {
+        background: #f8bbd0;
+        color: inherit;
+      }
     }
   }
 `;
@@ -141,8 +141,36 @@ export const Total = styled.div`
 export const EmptyCart = styled.div`
   display: flex;
   flex-direction: column;
-  max-width: 1020px;
-  margin: 0 auto;
-  background-color: #fce4ec;
-  border-radius: 4px;
+
+  p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 1.5px;
+  }
+
+  .btn {
+    align-self: flex-end;
+    width: 11rem;
+    font-size: 1rem;
+    background: #c9b2ba;
+    letter-spacing: 0.02em;
+    text-align: center;
+    border: 0;
+    color: #fff;
+    padding: 1rem;
+    transition: ease .5s;
+
+    &:hover {
+      background: #f8bbd0;
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+  }
+
 `;
