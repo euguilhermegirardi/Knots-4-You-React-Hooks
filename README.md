@@ -46,7 +46,7 @@ The frontend was developed with [**_React Hooks_**](https://reactjs.org/docs/hoo
 
 - Clone the repo
 
-      git clone https://github.com/euguilhermegirardi/Knots-4-You
+      git clone https://github.com/euguilhermegirardi/Knots-4-You.git
 
 3. Install NPM packages
 
