@@ -25,7 +25,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "build/server.json",
+    "build": "node build/server.json",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
