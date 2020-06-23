@@ -1,5 +1,5 @@
 # global context
 [build]
-  publish = "public"
-  command = "json-server server.json -p 3333"
+  publish = "build/"
+  command = "yarn start"
 
