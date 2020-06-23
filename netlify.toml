@@ -1,5 +1,0 @@
-# global context
-[build]
-  publish = "build/"
-  command = "yarn start"
-
