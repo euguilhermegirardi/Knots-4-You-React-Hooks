@@ -23,6 +23,10 @@ export const Form = styled.form`
 
     .header__name:nth-child(1) {
       margin-right: 3rem;
+
+      @media (max-width: 414px) {
+        margin-right: 1.5rem;
+      }
     }
   }
 

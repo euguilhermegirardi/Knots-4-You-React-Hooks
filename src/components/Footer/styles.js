@@ -74,6 +74,13 @@ export const FooterLinks = styled.div`
       color: inherit;
     }
   }
+
+  .input-footer {
+    @media (max-width: 414px) {
+      font-size: 12px;
+      height: 2rem;
+    }
+  }
 `;
 
 export const Routes = styled(LinkWrapper)`

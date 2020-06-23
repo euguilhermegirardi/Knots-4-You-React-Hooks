@@ -197,8 +197,11 @@ export const GetStarted = styled.section`
   background-color: #fce4ec;
   padding: 1rem 3rem 3rem 3rem;
 
-  @media (max-width: 414px) {}
+  @media (max-width: 414px) {
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr) );
     padding: 0;
+  }
+
 `;
 
 export const SmallTips = styled.div`

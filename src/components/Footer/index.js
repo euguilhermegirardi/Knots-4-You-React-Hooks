@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h4>Join the tribe</h4>
             <p>Sign up for email updates</p>
-            <input type="text"/>
+            <input className="input-footer" type="text"/>
             <button type="button">Join</button>
           </div>
 

@@ -29,6 +29,10 @@ export const ProductInfo = styled.div`
     display: flex;
   }
 
+  @media (max-width: 414px) {
+    margin: 0;
+  }
+
   & > div {
 
     @media (max-width: 950px) {
@@ -91,6 +95,11 @@ export const Image = styled.img`
     order: 2;
     align-self: center;
     margin: 1rem 0;
+  }
+
+  @media (max-width: 414px) {
+    width: 340px;
+    height: 340px;
   }
 `;
 
