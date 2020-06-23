@@ -128,7 +128,7 @@ export const Items = styled.div`
 
     @media (max-width: 414px) {
       position: absolute;
-      right: 3px;
+      right: 2.8rem;
       top: 9rem;
     }
 
@@ -164,6 +164,7 @@ export const Items = styled.div`
 
     @media (max-width: 414px) {
       width: 3rem;
+      margin-left: 10px;
     }
 
     input {
@@ -208,11 +209,11 @@ export const Items = styled.div`
     strong {
       font-size: 2rem;
     }
+  }
 
-    button {
+  button {
       background: none;
       border: 0;
       padding: 6px;
     }
-  }
 `;
