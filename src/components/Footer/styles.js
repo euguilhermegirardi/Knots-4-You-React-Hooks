@@ -16,6 +16,10 @@ export const SocialMedia = styled.div`
   justify-content: space-around;
   padding: 2rem;
 
+  @media (max-width: 414px) {
+    width: 100%;
+  }
+
   .icons {
     cursor: pointer;
     transition: ease .5s;

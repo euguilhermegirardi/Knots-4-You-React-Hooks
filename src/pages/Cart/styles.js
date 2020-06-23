@@ -85,8 +85,12 @@ export const Items = styled.div`
     flex-direction: column;
     justify-content: space-around;
 
-    p {
+    h2 {
       text-align: center;
+
+      @media (max-width: 414px) {
+        display: none;
+      }
     }
 
     img {
@@ -122,8 +126,18 @@ export const Items = styled.div`
     flex-direction: column;
     margin-top: 1rem;
 
+    @media (max-width: 414px) {
+      position: absolute;
+      right: 3px;
+      top: 9rem;
+    }
+
     h2 {
       text-align: center;
+
+      @media (max-width: 414px) {
+        display: none;
+      }
     }
 
     & > div {
@@ -148,6 +162,10 @@ export const Items = styled.div`
     align-items: center;
     justify-content: center;
 
+    @media (max-width: 414px) {
+      width: 3rem;
+    }
+
     input {
       width: 2rem;
       margin: 0 3px;
@@ -158,6 +176,10 @@ export const Items = styled.div`
     display: flex;
     flex-direction: column;
     margin-top: 1rem;
+
+    @media (max-width: 414px) {
+        display: none;
+      }
 
     h2 {
       text-align: center;
@@ -177,16 +199,20 @@ export const Items = styled.div`
 
     button {
       margin-top: 6rem;
+
+      @media (max-width: 414px) {
+        margin-top: 6.8rem;
+      }
     }
 
     strong {
       font-size: 2rem;
     }
-  }
 
-  button {
-    background: none;
-    border: 0;
-    padding: 6px;
+    button {
+      background: none;
+      border: 0;
+      padding: 6px;
+    }
   }
 `;
