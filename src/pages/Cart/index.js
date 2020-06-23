@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {
   MdRemoveCircleOutline,
@@ -52,7 +52,7 @@ export default function Cart() {
         }
 
         {cart.map(product => (
-          <>
+          <Fragment key={product.id}>
             <ProductTable>
               <thead>
                 <tr>
@@ -106,7 +106,7 @@ export default function Cart() {
                 <strong>€ {total}</strong>
               </Total>
             </footer>
-          </>
+          </Fragment>
         ))}
 
       </Container>
