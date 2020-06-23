@@ -54,7 +54,6 @@ The frontend was developed with [**_React Hooks_**](https://reactjs.org/docs/hoo
 
 4. Run the application
 
-       json-server server.json -p 3333 
        npm run start
 
 ## Contributing
@@ -68,3 +67,6 @@ The frontend was developed with [**_React Hooks_**](https://reactjs.org/docs/hoo
 ## License
 
 ![MIT](https://img.shields.io/badge/License-MIT-blue.svg)
+
+## Deploy
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e02a27ff-49b8-48b3-babc-2978ae6c9b6c/deploy-status)](https://app.netlify.com/sites/knots-4-you/deploys)
