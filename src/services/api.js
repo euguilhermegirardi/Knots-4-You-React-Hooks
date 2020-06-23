@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: 'https://cart-api-test-123.herokuapp.com/'
+  baseURL: 'https://json-server-knots-4-you.herokuapp.com/'
 });
 
 export default api;
