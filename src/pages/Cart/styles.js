@@ -124,12 +124,10 @@ export const Items = styled.div`
   .second-column {
     display: flex;
     flex-direction: column;
-    margin-top: 1rem;
 
     @media (max-width: 414px) {
       position: absolute;
       right: 2.8rem;
-      top: 9rem;
     }
 
     h2 {
